@@ -22,5 +22,8 @@ export class AppComponent {
 
   test(){
     return 200
-  }
+  };
+  isDisabled: boolean = false;
+  isHidden: boolean =false;
 }
+
