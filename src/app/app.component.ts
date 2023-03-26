@@ -25,5 +25,34 @@ export class AppComponent {
   };
   isDisabled: boolean = false;
   isHidden: boolean =false;
-}
 
+  //Property Binding
+  isbtnDisabled: boolean = false;
+  istxtHidden: boolean = false;
+
+  // Class binding
+  isActive: boolean = false;
+  applyC1: boolean = true;
+  // Style binding
+    colorVar: string = 'purple';
+    // myStyle:object = {
+    //   background-color: #c3c2c2;
+    // }
+
+  // Event binding
+  counter: number = 0;
+  increment(){
+    this.counter+=1;
+  }
+  decrement(){
+    this.counter-=1;
+  }
+  name="hello";
+  changeName(e:any){
+    // console.log(e);
+    // console.log(e.target);
+    // console.log(e.target.value)
+    this.name=e.target.value;
+
+  }
+}
