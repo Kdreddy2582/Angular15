@@ -17,6 +17,7 @@
       <h2>{{ customDate + "Today Time" }}</h2>
       <hr />
       <h1>{{ test() }}</h1>
+
     </div>
   </div>
   <div class="row">
@@ -27,7 +28,71 @@
 
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <hr>
+      <h1>Property Binding</h1>
+      <!-- <pre>
+        <code>
+          //Syntax: {{ //Property }}
+        </code>
+      </pre> -->
+      Name:<input type="text">
+      <button [disabled]="isbtnDisabled">Submit </button><br>
+      Hidden: <input type="text" [hidden]="istxtHidden">
+
+    </div>
+  </div>
+  <div class="row bg-secondary">
+    <div class="col-lg-12">
+      <hr>
+      <h1 [class]= "isActive?'active':'inActive'">Class Binding</h1>
+      <!-- <pre>
+        <code>
+          //Syntax: {{ //Property }}
+        </code>
+      </pre> -->
+      <h1 [class]="{c1:true}">class minding 1</h1>
+      <h1 [class]="{c1:applyC1}">class binding 2</h1>
+      <h1 [class]="['c1', 'active']">class binding 3</h1>
+    </div>
+  </div>
+  <div class="row bg-light border my-4">
+    <div class="col-lg-12">
+      <hr>
+      <h1 [style]="{color:colorVar}">Style Binding</h1>
+      <!-- <pre>
+        <code>
+          //Syntax: {{ //Property }}
+        </code>
+      </pre> -->
+      <h1 [style.color]="colorVar">Style Binding 1</h1>
+      <!-- <h1 [style.color]="myStyle">class binding 2</h1> -->
+    </div>
+  </div>
+  <div class="row bg-secondary border my-4">
+    <div class="col-lg-12 text-white">
+      <h1>Event binding</h1>
+      <!-- <pre>
+        <code>
+          //Syntax: (eventName) = somefun()
+                    on-eventname = somefun()
+        </code>
+      </pre> -->
+      <button (click)="increment()">Click and count</button>
+      <button (click)="decrement()">Click and count</button>
+      <h1>Counter: {{counter}}</h1>
+
+      Name: <input type="text" (input)="changeName($event)">
+      <!-- Name: <input type="text" on-input="changeName($event)"> -->
+      <h1>Change you Name: {{name}}</h1>
+
+
+    </div>
+  </div>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
