@@ -55,4 +55,17 @@ export class AppComponent {
     this.name=e.target.value;
 
   }
+  //Two way binding in Angular
+  cityName: string = "Hyderabad"
+  bindDate(){
+    this.cityName = "Vizag"
+  }
+  // Directives in Angular
+  isShow = false;
+  studentList = ["Ramu", "Guru", "Deva", "Giri", "Brama"]
+  // NgiF Statements
+  isHeader =  true;
+  data = "";
+  //data = ["Vizag", "Srikakulam", "Vizainagaram"]
+
 }
