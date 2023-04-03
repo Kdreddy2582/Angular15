@@ -68,4 +68,44 @@ export class AppComponent {
   data = "";
   //data = ["Vizag", "Srikakulam", "Vizainagaram"]
 
+  // NgFor Statements
+  nums = [1,2,3,4,5,6,7,8,9,10]
+  empTable = [
+    {
+      empID: "101",
+      empName: "Devender",
+      jobTitle: "UI Developer",
+      experiance: "5 years",
+      location: "Hyderabad"
+    },
+    {
+      empID: "102",
+      empName: "Lalitha",
+      jobTitle: "Java Developer",
+      experiance: "3 years",
+      location: "Vizag"
+    },
+    {
+      empID: "103",
+      empName: "Sushmitha",
+      jobTitle: "PHP Developer",
+      experiance: "6 years",
+      location: "Hyderabad"
+    },
+    {
+      empID: "104",
+      empName: "Ramana",
+      jobTitle: "Dotnet Developer",
+      experiance: "4 years",
+      location: "Babgalure"
+    },
+    {
+      empID: "105",
+      empName: "Bheema",
+      jobTitle: "UI Developer",
+      experiance: "2 years",
+      location: "Srikakulam"
+    }
+  ]
+
 }
