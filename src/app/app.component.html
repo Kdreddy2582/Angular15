@@ -153,7 +153,46 @@
       </ng-template>
     </div>
   </div>
+  <!-- NgFor Statement Start -->
+  <div class="row bg-light  py-4">
+    <div class="col-lg-12">
+      <h1>NgFor Statements</h1>
+      <h2>Variable: index, first, last, even, odd</h2>
+      <hr>
+      <!-- <h4 *ngFor="let n of nums"> {{n}} Paragraph </h4> -->
+      <h4 *ngFor="let n of nums; index as i"> {{i}} Paragraph {{n}}   </h4>
+    </div>
+    <div class="col-lg-12">
+      <table border="1" cellPadding="1" cellSpacing="1" width="100%">
+        <tr>
+          <th>Emp ID</th>
+          <th>Emp Name</th>
+          <th>Job Title</th>
+          <th>Experiance</th>
+          <th>Location</th>
+        </tr>
+        <tr *ngFor="let emp of empTable">
+          <td>{{emp.empID}}</td>
+          <td>{{emp.empName}}</td>
+          <td>{{emp.jobTitle}}</td>
+          <td>{{emp.experiance}}</td>
+          <td>{{emp.location}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- NgFor Statement End -->
+ <!-- ngSwitch  Statement Start-->
+  <div class="row bg-secondary py-4 text-white">
+    <div class="col-lg-12">
+      <h1>ngSwitch  Statement</h1>
+      <hr>
 
+
+
+    </div>
+  </div>
+  <!-- ngSwitch Statement end-->
 </div>
 <div class="container">
   <div class="row">
