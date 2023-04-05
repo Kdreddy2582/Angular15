@@ -108,4 +108,29 @@ export class AppComponent {
     }
   ]
 
+
+   // NgSwitch Statements
+  num1 : number = 6;
+  num2 : number = 8;
+  op :string = "";
+  //op :string = "kfjkosedj";
+
+
+  //Pipes in angular
+  upipeName = "Angular uppercase"
+  tpipeName = "angular titlecase"
+  lpipeName = "Angular Lowercase"
+  salaryPipe = 55000;
+  jsonPipePerson = {
+    'Name' : "Deva",
+    'Age' : 35,
+    'Location' : "Hyderabad"
+  }
+  dobPipe = new Date();
+  percentPipe = 0.56;
+  company ="Microsoft";
+
+
+
+
 }
