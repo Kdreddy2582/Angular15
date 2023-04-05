@@ -187,12 +187,61 @@
     <div class="col-lg-12">
       <h1>ngSwitch  Statement</h1>
       <hr>
-
-
-
+      <input type="text" [(ngModel)] ="op">
+      <div [ngSwitch]="op" style="font-size: 45px;">
+        <div *ngSwitchCase="'+'">{{num1}}+{{num2}} = {{num1+num2}}</div>
+        <div *ngSwitchCase="'-'">{{num1}}-{{num2}} = {{num1-num2}}</div>
+        <div *ngSwitchCase="'*'">{{num1}}*{{num2}} = {{num1*num2}}</div>
+        <div *ngSwitchCase="'/'">{{num1}}/{{num2}} = {{num1/num2}}</div>
+        <div *ngSwitchDefault="'+'">Invalid Match</div>
+      </div>
     </div>
   </div>
   <!-- ngSwitch Statement end-->
+  <!-- Pipes in Angular Start -->
+  <div class="row bg-light  py-4 border">
+    <div class="col-lg-12">
+      <h1>Pipes:</h1>
+      <h3>Used to transform data before displaying it on in the browser</h3>
+      <h1>Syntax: Expression | pipname [:parameters]</h1>
+      <h3>Ex: 'angular' | uppercase</h3>
+      <ol style="font-size: 32px;">
+        <li>CurrencyPipe</li>
+        <li>DatePipe</li>
+        <li>DecimalPipe</li>
+        <li>JsonPipe</li>
+        <li>LowerCasePipe</li>
+        <li>UpperCasePipe</li>
+        <li>PercentPipe</li>
+        <li>SlicePipe</li>
+        <li>AsyncPipe</li>
+      </ol>
+      <hr>
+      <h3>{{upipeName | uppercase}}</h3>
+      <h3>{{tpipeName | titlecase}}</h3>
+      <h3>{{lpipeName | lowercase}}</h3>
+      <h3>CurrencyPipe: {{salaryPipe | currency}}</h3>
+      <h3>CurrencyPipe: {{salaryPipe | currency : 'INR'}} </h3>
+      <h3>CurrencyPipe: {{salaryPipe | currency : 'INR' : 'code'}} </h3>
+      <h3>CurrencyPipe: {{salaryPipe | currency : 'INR' : 'symbol'}} </h3>
+      <h3>JsonPipe: {{jsonPipePerson | json}}</h3>
+      <h3>DatePipe: {{dobPipe}}</h3>
+      <h3>DatePipe: {{dobPipe | date}}</h3>
+      <h3>DatePipe: {{dobPipe | date : 'dd/MM/YYYY'}}</h3>
+      <h3>PercentPipe: {{percentPipe}}</h3>
+      <h3>PercentPipe: {{percentPipe | percent}}</h3>
+      <h3>SlicePipe: {{company}}</h3>
+      <h3>SlicePipe: {{company | slice:2:7}}</h3>
+    </div>
+  </div>
+  <!-- Pipes in Angular End -->
+  <!-- Custome Pipes in Angular start -->
+  <div class="row bg-secondary py-4 text-white">
+    <div class="col-lg-12">
+      <h1>Custome Pipes in Angular</h1>
+    </div>
+  </div>
+  <!-- Custome Pipes in Angular End -->
 </div>
 <div class="container">
   <div class="row">
